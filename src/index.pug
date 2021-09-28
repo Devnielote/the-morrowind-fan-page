@@ -1,0 +1,16 @@
+extend components/template.pug
+block content
+    .container.mobile-containers
+        +landing-post(tags[0],subtitles[0])
+        +landing-post(tags[1],subtitles[1])
+        +landing-post(tags[2],subtitles[2])
+        +landing-post(tags[3],subtitles[3])
+        +landing-post(tags[1],subtitles[4])
+        +landing-post(tags[2],subtitles[6])
+        .noBg-post
+            h2=subtitles[5]
+            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis et est natus temporibus neque delectus. Magni, blanditiis qui perspiciatis accusantium, nulla dignissimos exercitationem dolore, explicabo quibusdam unde quas fugit ratione!
+            span.btn--post Leer
+        .outstanding-news 
+            h2 NOTICIAS DESTACADAS
+            +news(news[0],news[1],news[2])

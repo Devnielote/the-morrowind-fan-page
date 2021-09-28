@@ -1,0 +1,23 @@
+extend components/template.pug
+block content
+    article.article__container.mobile-containers
+        .article
+            figure
+                img(src="assets/main-post.jpeg", alt="")
+                h2=subtitles[0]
+            .article__info
+                h3 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque animi error delectus voluptatibus numquam at. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste dicta quod quos. Omnis repudiandae quidem illo? Iure, ullam laborum saepe voluptate itaque voluptas, odit dolorem accusantium neque temporibus commodi assumenda!
+                br
+                p Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, pariatur. Molestiae modi saepe veniam omnis odio nesciunt voluptas molestias. Veniam eius eveniet harum nesciunt labore voluptatem possimus voluptate, praesentium, magnam officia porro quam neque a tempore. Iste alias in tenetur quibusdam a nemo veritatis porro perspiciatis! Reiciendis, aspernatur explicabo delectus dicta dignissimos, ut facere deserunt blanditiis cupiditate alias velit. Sit quos quo laudantium incidunt nesciunt adipisci, at optio voluptate qui ducimus vel labore impedit debitis dolore. Aut modi quia, quasi dolore ipsa quod aliquid laudantium blanditiis quibusdam provident ab consequatur temporibus aliquam quis saepe voluptas. Omnis molestiae eveniet recusandae repellat.
+                br
+                span Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, harum.
+                br
+                br
+                p Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis porro suscipit velit provident quae corporis est eveniet. In, vero rerum? Eum quo est saepe! Nulla quis beatae omnis, natus esse ad magni ea fugit recusandae exercitationem facilis quos, deleniti eveniet nihil, asperiores totam id vel quaerat veniam doloribus. Tempora, eius?
+        .articles
+            .articles__title
+                h2 No te pierdas...
+            .articles__container
+                +post(subtitles[1],"assets/post1.webp")
+                +post(subtitles[2],"assets/post2.webp")
+                +post(subtitles[3],"assets/post3.webp")

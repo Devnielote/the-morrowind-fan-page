@@ -1,0 +1,136 @@
+@use "colors" as *;
+@use "mixins" as *;
+@use "globales" as *;
+.article__container {
+	padding-top: 5rem;
+	padding-bottom: 5rem;
+}
+
+.article {
+	display: grid;
+	grid-template-rows: 300px 1fr;
+
+    & figure {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        border: 1rem solid white;
+        @include box-shadow;
+
+        & h2 {
+            position: absolute;
+            top: 40%;
+            text-align: center;
+            font-size: 3rem;
+            color: white;
+            text-shadow: 2px 2px 2px #000000;
+        }
+    }
+
+    &__info {
+        width: 100%;
+        min-width: 280px;
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 3rem 0 3rem 0;
+
+        & h3 {
+            font-size: 2rem;
+            line-height: 3rem;
+        }
+
+        & p {
+            font-size: 1.6rem;
+            line-height: 2.5rem;
+        }
+
+        & span {
+            font-size: 1.8rem;
+            text-transform: uppercase;
+            line-height: 2.5rem;
+            color: $color-extra;
+            font-weight: 600;
+        }
+    }
+}
+
+.articles {
+	display: grid;
+	grid-template-rows: 15rem 1fr;
+    margin-top: 5rem;
+	padding-bottom: 5rem;
+
+    &__title {
+        font-size: 3rem;
+        text-align: center;
+        color: $color-primary;
+    }
+}
+
+
+.articles__container {
+
+    & article {
+        margin-bottom: 2rem;
+    }
+}
+
+@if($dark-mode) {
+    .article {
+
+        & figure {
+            border: 1rem solid $color-extra;
+            -webkit-box-shadow: 4px 7px 7px -1px rgba(130,135,16,0.34); 
+            box-shadow: 4px 7px 7px -1px rgba(130,135,16,0.34);
+        }
+    
+        &__info {
+            width: 100%;
+            min-width: 280px;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 3rem 0 3rem 0;
+            color: whitesmoke;
+    
+            & h3 {
+                font-size: 2rem;
+                line-height: 3rem;
+            }
+    
+            & p {
+                font-size: 1.6rem;
+                line-height: 2.5rem;
+            }
+    
+            & span {
+                font-size: 1.8rem;
+                text-transform: uppercase;
+                line-height: 2.5rem;
+                color: $color-extra;
+                font-weight: 600;
+            }
+        }
+    }
+    
+    .articles {
+        display: grid;
+        grid-template-rows: 15rem 1fr;
+        margin-top: 5rem;
+        padding-bottom: 5rem;
+    
+        &__title {
+            font-size: 3rem;
+            text-align: center;
+            color: $color-alternative;
+        }
+    }
+    
+    
+    .articles__container {
+    
+        & article {
+            margin-bottom: 2rem;
+        }
+    }
+}

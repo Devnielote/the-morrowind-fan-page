@@ -1,0 +1,41 @@
+-var navigation = ["Inicio","Noticias","Perfil","Buscar"];
+-var subtitles = ["Historia de Vivec","Iniciando en Morrowind","Últimos Mods","Guía Completa de Instalación","Consejos de Creación de Personaje","Explicando el Sistema de Combate","Línea Temporal de ESO"];
+-var builds = ["Build inicial | Ladrón","Build inicial | Barbaro","Build inicial | Pilgrim",]
+-var img = ["assets/post1.webp","assets/post2.webp","assets/post3.webp","assets/post4.webp","assets/post5.webp","assets/post6.webp","assets/thief.png","assets/nordic.png","assets/pilgrim.png","assets/comment.svg","assets/share.svg","assets/view.svg",]
+-var tags = ["DESTACADAS","GUÍAS","CONSEJOS","LORE","MODS"]
+-var news = ["ESO VI: Filtran posible fecha para su lanzamiento (2060)","La importancia de morrowind en los rpg's de hoy en dia","MOD DE LA SEMANA: Inicio nuevo, ex-esclavo "]
+//- -var usuario = "Daniel";
+mixin post(subtitle,img)
+            article.post
+                a(href="articles.html") 
+                    figure
+                        img(src=img, alt="")
+                    .post__info
+                        h2=subtitle
+                        p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque, officia.
+mixin landing-post(tags,title)
+    article.post-bg
+        span=tags
+        h2=title
+        p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident est
+        .statistics
+            figure
+                img(src=img[10], alt="")
+                span 275
+            figure
+                img(src=img[11], alt="")
+                span 275
+            figure
+                img(src=img[9], alt="")
+                span 275
+mixin news(notice1,notice2,notice3)
+    .news-feed
+        span 1 
+            p=notice1
+        span 2
+            p=notice2
+        span 3
+            p=notice3
+
+
+    //- TO DO: Mixin con fondo de imagen

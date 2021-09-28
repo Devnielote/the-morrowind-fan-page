@@ -1,0 +1,62 @@
+extend components/template.pug
+block content
+    section.search.mobile-containers
+        .search__container
+            input(type="text" placeholder="Guías")
+        .search__results
+            .results__title
+                h3 20 resultados para "guías"
+                .filters
+                    span filtrar por
+                    figure
+                        img(src="assets/squares.svg", alt="")
+                    figure
+                        img(src="assets/list.svg", alt="")
+            .results__container
+                +post(builds[0],img[6])
+                +post(builds[1],img[7])
+                +post(builds[2],img[8])
+
+                .post--noImg
+                    .noImg-info
+                        h3=subtitles[0]
+                        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem eveniet ut temporibus accusamus ipsum, vitae, quasi velit minima, tempore magnam quaerat! Recusandae impedit non aliquam quae eaque assumenda, cupiditate dolorem.
+                    .statistics
+                        figure
+                            img(src="assets/share.svg", alt="")
+                            span 375
+                        figure
+                            img(src="assets/view.svg", alt="")
+                            span 273
+                        figure
+                            img(src="assets/comment.svg", alt="")
+                            span 45
+                .post--noImg
+                    .noImg-info
+                        h3=subtitles[2]
+                        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem eveniet ut temporibus accusamus ipsum, vitae, quasi velit minima, tempore magnam quaerat! Recusandae impedit non aliquam quae eaque assumenda, cupiditate dolorem.
+                    .statistics
+                        figure
+                            img(src="assets/share.svg", alt="")
+                            span 375
+                        figure
+                            img(src="assets/view.svg", alt="")
+                            span 273
+                        figure
+                            img(src="assets/comment.svg", alt="")
+                            span 45
+                .post--noImg
+                    .noImg-info
+                        h3=subtitles[0] 
+                        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem eveniet ut temporibus accusamus ipsum, vitae, quasi velit minima, tempore magnam quaerat! Recusandae impedit non aliquam quae eaque assumenda, cupiditate dolorem.
+                    .statistics
+                        figure
+                            img(src="assets/share.svg", alt="")
+                            span 375
+                        figure
+                            img(src="assets/view.svg", alt="")
+                            span 273
+                        figure
+                            img(src="assets/comment.svg", alt="")
+                            span 45
+                
