@@ -198,15 +198,15 @@
   }
 
   footer {
-    grid-template-columns: repeat(2, auto);
+    justify-content: space-between;
   }
   footer h4 {
     text-align: left;
-    margin-left: 10rem;
   }
   footer .contact ul {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    margin: 0;
   }
   footer figure {
     width: 30px;
