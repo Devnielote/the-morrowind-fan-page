@@ -206,7 +206,6 @@
   footer .contact ul {
     display: flex;
     justify-content: space-between;
-    margin: 0;
   }
   footer figure {
     width: 30px;
